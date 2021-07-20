@@ -6,7 +6,7 @@ const userRoute = require("./router/user");
 const app = express();
 // app.use(cors());
 app.use(bodyparser.json())
-app.use("/api/user")
+app.use("/api/user",userRoute)
 
 
 module.exports = app;
