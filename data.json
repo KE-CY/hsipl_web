@@ -1,38 +1,56 @@
 {
     "Education": [
         {
-            "years": "2008 ~ 2010",
+            "date": "2008 ~ 2010",
             "institution": "National Chung Hsing University",
             "major": "Electrical Engineering",
-            "Degree": "M.S."
+            "degree": "M.S.",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
-            "years": "2011 ~ 2014",
+            "date": "2011 ~ 2014",
             "institution": "University of Maryland Baltimore County",
             "major": "Electrical Engineering",
-            "Degree": "Ph.D."
+            "degree": "Ph.D.",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Research": [
         {
             "years": "2018 ~ present",
             "employer": "National Yunlin University of Science and Technology",
-            "position": "Assistant Professor"
+            "position": "Assistant Professor",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "years": "2014 ~ 2018",
             "employer": "National Yunlin University of Science and Technology",
-            "position": "Assistant Professor"
+            "position": "Assistant Professor",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "years": "2011 ~ 2014",
             "employer": "University of Maryland Baltimore County",
-            "position": "Research Assistant"
+            "position": "Research Assistant",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "years": "2008 ~ 2011",
             "employer": "Taichung Veterans General Hospital, Taiwan",
-            "position": "Research Assistant"
+            "position": "Research Assistant",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Journal": [
@@ -41,141 +59,213 @@
             "title": "Hybrid Deep Learning Models with Sparse Enhancement Technique for Detection of Newly Grown Tree Leaves",
             "link": "https://www.mdpi.com/1424-8220/21/6/2077",
             "description": "Sensors 21, no. 6: 2077.",
-            "mark": "Chen, Shih-Yu"
+            "mark": "Chen, Shih-Yu",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "author": "Shih-Yu Chen, Chuan-Yu Chang, Cheng-Syue OU and Chou-Tien Lien (2020, Jul). ",
             "title": "Detection of Insect Damage in Green Coffee Beans Using VIS-NIR Hyperspectral Imaging.",
             "link": "https://www.mdpi.com/2072-4292/12/15/2348/htm",
             "description": "Remote sensing, 12(15), 2348. (SCI, IF = 4.509, Ranking = 9/30 = 30%, Remote sensing). 本人為第一作者、通訊作者.",
-            "mark": "Shih-Yu Chen"
+            "mark": "Shih-Yu Chen",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Projects": [
         {
-            "name": "應用高光譜影像辨識技術發展智慧新農業以提升農產品質管理為例",
+            "title": "應用高光譜影像辨識技術發展智慧新農業以提升農產品質管理為例",
             "date": "2020/08/01 ~ 2023/07/31",
             "subsidyUnit": "科技部",
-            "money": "3,165,000"
+            "money": "3,165,000",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
-            "name": "高光譜智慧辨識技術平台開發",
+            "title": "高光譜智慧辨識技術平台開發",
             "date": "2019/11/01 ~ 2020/10/31",
             "subsidyUnit": "科技部",
-            "money": "570,000"
+            "money": "570,000",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Talks": [
         {
             "year": "2019",
             "place": "Department of College Engineering, Yunlin University of Technology",
-            "topic": "[提升產品分級能力]大數據應用新商機"
+            "topic": "[提升產品分級能力]大數據應用新商機",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "year": "2019",
             "place": "Yunlin Technology-based Industrial Park Service Center",
-            "topic": "手持式光譜訊號雲端檢測技術-演算法及案例分析"
+            "topic": "手持式光譜訊號雲端檢測技術-演算法及案例分析",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Conference": [
         {
             "year": "2017",
-            "text": "Keng-Hao Liu, Hung-Chang Chien, Shih-Yu Chen (2017, Aug). Progressive sample processing of band selection for hyperspectral imagery. SPIE Remote Sensing 2017.",
-            "link": ""
+            "title": "Keng-Hao Liu, Hung-Chang Chien, Shih-Yu Chen (2017, Aug). Progressive sample processing of band selection for hyperspectral imagery. SPIE Remote Sensing 2017.",
+            "link": "",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "year": "2017",
-            "text": "Bai Xue, Shih-Yu Chen, Chunyuan Yu, Yulei Wang, Lin Wang, Meiping Song, Sen Li, Chein-I Chang (2017, Aug). Kernel Automatic Target Generation Process. 2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2017).",
-            "link": ""
+            "title": "Bai Xue, Shih-Yu Chen, Chunyuan Yu, Yulei Wang, Lin Wang, Meiping Song, Sen Li, Chein-I Chang (2017, Aug). Kernel Automatic Target Generation Process. 2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2017).",
+            "link": "",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "ConferenceAbstract": [
         {
             "year": "2016",
-            "text": "Shih-Yu Chen, Chia-Hui Tai, Tse-Yu Chien;\"Early Landslide Detection and Warning System Using Remote Sensing Imagery\",Oct 15,2016",
-            "link": ""
+            "title": "Shih-Yu Chen, Chia-Hui Tai, Tse-Yu Chien;\"Early Landslide Detection and Warning System Using Remote Sensing Imagery\",Oct 15,2016",
+            "link": "",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "year": "2016",
-            "text": "Shih-Yu Chen, Chinsu Lin, Fu-Ming Yang, Li-Han Lin;\"Extracting Tree Rings form Disc Bitmap Image\",Oct 15,2016",
-            "link": ""
+            "title": "Shih-Yu Chen, Chinsu Lin, Fu-Ming Yang, Li-Han Lin;\"Extracting Tree Rings form Disc Bitmap Image\",Oct 15,2016",
+            "link": "",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Awards": [
         {
             "year": "2021",
             "place": "指導專題生歐俊毅 ,張哲維 ,康峻瑋同學參加教育部人工智慧競賽-AI CUP 2021醫病訊息決策與對話語料分析競賽",
-            "award": "前標"
+            "award": "前標",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         },
         {
             "year": "2020",
             "place": "雲科大109年度",
-            "award": "教師免評鑑榮譽"
+            "award": "教師免評鑑榮譽",
+            "createAT": "2018 12:30",
+            "updateAT": "2018 12:30",
+            "isDelete": "false"
         }
     ],
     "Service": {
-        "internationality": [
+        "Internationality": [
             {
                 "date": "Oct. 13-16, 2017",
                 "place": "Xian, China",
-                "name": "Keynote speaker, International Workshops on Optoeletronic Perception (IWOP2017)"
+                "title": "Keynote speaker, International Workshops on Optoeletronic Perception (IWOP2017)",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "SpecialAgenda": [
             {
                 "date": "Aug. 21-23, 2017",
-                "name": "CVGIP 2017第30屆電腦視覺、圖學與影像處理研討會特別議程主席, 杉林溪"
+                "title": "CVGIP 2017第30屆電腦視覺、圖學與影像處理研討會特別議程主席, 杉林溪",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             },
             {
                 "date": "2018",
-                "name": "NCWIA-2018第8屆網路智能應用研討會"
+                "title": "NCWIA-2018第8屆網路智能應用研討會",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             },
             {
                 "date": "2019",
-                "name": "NCWIA-2019第9屆網路智能應用研討會"
+                "title": "NCWIA-2019第9屆網路智能應用研討會",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "AgendaChair": [
             {
                 "date": "2020",
-                "name": "NCWIA-2020第10屆網路智能應用研討會"
+                "title": "NCWIA-2020第10屆網路智能應用研討會",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "PosterAgenda": [
             {
                 "date": "Dec. 12-14, 2014",
-                "name": "International Computer Symposium (ICS), Tunghai University, Taichung, Taiwan on December"
+                "title": "International Computer Symposium (ICS), Tunghai University, Taichung, Taiwan on December",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "AgendaCommittee": [
             {
                 "date": "Nov. 20-24, 2016",
-                "name": "The 13th Asian Conference on Computer Vision (ACCV’16), Taipei"
+                "title": "The 13th Asian Conference on Computer Vision (ACCV’16), Taipei",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "AgendaHost": [
             {
                 "date": "Dec. 12-14, 2014",
                 "place": "Tunghai University, Taichung, Taiwan",
-                "name": "International Computer Symposium (ICS)"
+                "title": "International Computer Symposium (ICS)",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             },
             {
                 "date": "Dec. 26-27, 2014",
                 "place": "Taichung, Taiwan",
-                "name": "台中榮總醫學影像量化研究中心學術研討會"
+                "title": "台中榮總醫學影像量化研究中心學術研討會",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "AcademicCommittee": [
             {
-                "name": "擔任財團法人地球觀測學會學術委員會委員"
+                "title": "擔任財團法人地球觀測學會學術委員會委員",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ],
         "Reviewers": [
             {
-                "name": "GIScience and Remote Sensing"
+                "title": "GIScience and Remote Sensing",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             },
             {
-                "name": "IEEE Transactions on Geoscience and Remote Sensing"
+                "title": "IEEE Transactions on Geoscience and Remote Sensing",
+                "createAT": "2018 12:30",
+                "updateAT": "2018 12:30",
+                "isDelete": "false"
             }
         ]
     }
