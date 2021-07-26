@@ -1,31 +1,59 @@
 class errorHandler {
-    returnErrorMsg(statusCode,msg){
-        return{
-            statusCode:Number(statusCode),
-            msg:String(msg),
-        };
-    }
     infoErr() {
-        this.returnErrorMsg(400,"your info is wrong.");
+      return {
+        statusCode: 400,
+        msg: "your info is wrong.",
+      };
     }
     userAlreadyExist() {
-        this.returnErrorMsg(409,"user already exist.");
+      return {
+        statusCode: 409,
+        msg: "user already exist.",
+      };
     }
     userNotExist() {
-        this.returnErrorMsg(404,"user not exist.");
+      return {
+        statusCode: 404,
+        msg: "user not exist.",
+      };
+    }
+    dataNotFind(){
+      return {
+        statusCode: 404,
+        msg: "data not find.",
+      };
     }
     loginError() {
-        this.returnErrorMsg(400,"username or password is wrong.");
+      return {
+        statusCode: 400,
+        msg: "username or password is wrong.",
+      };
     }
     tokenError() {
-        this.returnErrorMsg(401,"token wrong,please login again.");
+      return {
+        statusCode: 401,
+        msg: "token wrong,please login again.",
+      };
     }
-    accessError() {
-        this.returnErrorMsg(400,"access error.");
+    accessError(){
+      return {
+        statusCode:400,
+        msg:"access error."
+      }
     }
     ipError(){
-        this.returnErrorMsg(400,"Authentication failed.");
+      return{
+        statusCode:400,
+        msg:"Authentication failed."
+      }
     }
-}
-
-module.exports = new errorHandler();
+    payerError(){
+      return {
+        statusCode:400,
+        msg:"payer profile does not exist."
+      }
+    }
+  }
+  
+  module.exports = new errorHandler();
+  
