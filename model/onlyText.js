@@ -1,8 +1,33 @@
+const mongoose = require("mongoose")
+const { v4: uuidv4 } = require('uuid');
+const timeZone = require("mongoose-timezone")
+const onlyTextSchema = new mongoose.Schema({
+    data: {
+        type: String,
+        require: true,
+        transform: true,
+        flattenDecimals: true
+    }
+}, {
+    versionKey: false
+})
+
 class Default {
     constructor() {
-        this.createAT = new Date().toLocaleString();
+        this.id = null;
+        this.createAT = null;
         this.updateAT = [];
         this.isDelete = false;
+    }
+    create() {
+        this.id = uuidv4().replaceAll('-', '');
+        this.createAT = new Date().toLocaleString();
+    }
+    update() {
+        this.updateAT.push(new Date().toLocaleString());
+    }
+    delete() {
+        this.isDelete = true;
     }
 }
 class Experience extends Default {
@@ -102,3 +127,10 @@ class ServicePosterAgenda extends Default {
         this.title = title;
     }
 }
+const onlyText = mongoose.model("onlyText", onlyTextSchema);
+module.exports = {
+    onlyText, Experience, Research, Journal,
+    Projects, Talks, Conference, ConferenceAbstract, Awards,
+    ServiceInternationality, ServiceSpecialAgenda, ServiceAgendaChair,
+    ServicePosterAgenda
+};
