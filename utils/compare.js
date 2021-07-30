@@ -1,9 +1,9 @@
 const distinguish = async (data) => {
     const create = await data.filter((val) => {
-        return val.id == undefined;
+        return val.createAT == undefined || null;
     });
     let updata = await data.filter((val) => {
-        return val.id != undefined;
+        return val.createAT != undefined;
     });
     // console.log(create);
     // console.log(updata);

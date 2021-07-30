@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuid } = require('uuid');
 const timeZone = require("mongoose-timezone")
 const onlyTextSchema = new mongoose.Schema({
     data: {
@@ -16,11 +16,13 @@ class Default {
     constructor() {
         this.id = null;
         this.createAT = null;
-        this.updateAT = [];
+        this.updateAT = 'updateAT';
         this.isDelete = false;
+        // this.create = this.create.bind(this);
+        // this.create = this.create.bind(this);
     }
     create() {
-        this.id = uuidv4().replaceAll('-', '');
+        this.id = uuid();
         this.createAT = new Date().toLocaleString();
     }
     update() {
@@ -128,9 +130,11 @@ class ServicePosterAgenda extends Default {
     }
 }
 const onlyText = mongoose.model("onlyText", onlyTextSchema);
+
+
 module.exports = {
-    onlyText, Experience, Research, Journal,
-    Projects, Talks, Conference, ConferenceAbstract, Awards,
-    ServiceInternationality, ServiceSpecialAgenda, ServiceAgendaChair,
+    onlyText, Experience, Research,
+    Journal, Projects, Talks, Conference, ConferenceAbstract,
+    Awards, ServiceInternationality, ServiceSpecialAgenda, ServiceAgendaChair,
     ServicePosterAgenda
 };
