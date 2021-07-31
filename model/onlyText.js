@@ -16,18 +16,16 @@ class Default {
     constructor() {
         this.id = null;
         this.createAT = null;
-        this.updateAT = 'updateAT';
+        this.updateAT = [];
         this.isDelete = false;
-        // this.create = this.create.bind(this);
-        // this.create = this.create.bind(this);
     }
     create() {
         this.id = uuid();
         this.createAT = new Date().toLocaleString();
     }
-    update() {
-        this.updateAT.push(new Date().toLocaleString());
-    }
+    // update() {
+    //     this.updateAT.push(new Date().toLocaleString());
+    // }
     delete() {
         this.isDelete = true;
     }
