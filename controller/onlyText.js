@@ -7,6 +7,30 @@ async function getData() {
     return await testData;
 }
 class onlyTextController {
+    async get(req, res, next) {
+        try {
+            const masterData = await testData; // 資料庫搜尋資料(要string 轉json)
+            const { type } = req.query;
+            const keys = Object.keys(masterData);
+            if (!keys.includes(type)) {
+                return next(errorHandler.dataNotFind());
+            }
+            let master;
+            if (!type) {
+                master = masterData;
+            } else {
+                master = masterData[type];
+            }
+            res.status(201).json({
+                data: master
+            });
+        } catch (error) {
+            res.status(404).json({
+                msg: error
+            });
+        }
+    }
+
     async create(req, res, next) {
         try {
             const objectKey = req.params.objectKey; //client要更新的資料
