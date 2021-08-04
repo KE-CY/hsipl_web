@@ -1,8 +1,14 @@
 const mongoose = require("mongoose")
 const { v4: uuid } = require('uuid');
 const timeZone = require("mongoose-timezone")
-const onlyTextSchema = new mongoose.Schema({
-    data: {
+const webDataSchema = new mongoose.Schema({
+    onlyTextData: {
+        type: String,
+        require: true,
+        transform: true,
+        flattenDecimals: true
+    },
+    includeImageData: {
         type: String,
         require: true,
         transform: true,
@@ -127,12 +133,42 @@ class ServicePosterAgenda extends Default {
         this.title = title;
     }
 }
-const onlyText = mongoose.model("onlyText", onlyTextSchema);
+//
+class ServiceAgendaCommittee extends Default {
+    constructor(date, title) {
+        super();
+        this.date = date;
+        this.title = title;
+    }
+}
+class ServiceAgendaHost extends Default {
+    constructor(date, title) {
+        super();
+        this.date = date;
+        this.title = title;
+    }
+}
+class ServiceAcademicCommittee extends Default {
+    constructor(date, title) {
+        super();
+        this.date = date;
+        this.title = title;
+    }
+}
+class ServiceReviewers extends Default {
+    constructor(date, title) {
+        super();
+        this.date = date;
+        this.title = title;
+    }
+}
+const webData = mongoose.model("WebData", webDataSchema);
 
 
 module.exports = {
-    onlyText, Experience, Research,
+    webData, Experience, Research,
     Journal, Projects, Talks, Conference, ConferenceAbstract,
     Awards, ServiceInternationality, ServiceSpecialAgenda, ServiceAgendaChair,
-    ServicePosterAgenda
+    ServicePosterAgenda, ServiceAgendaCommittee, ServiceAgendaHost,
+    ServiceAcademicCommittee, ServiceReviewers
 };
