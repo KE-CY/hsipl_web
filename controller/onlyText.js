@@ -27,6 +27,7 @@ class onlyTextController {
                 master = masterData[type];
             }
             res.status(201).json({
+                msg: 'success',
                 data: master
             });
         } catch (error) {
