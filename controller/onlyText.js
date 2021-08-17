@@ -1,7 +1,6 @@
 const errorHandler = require("../middleware/errorHandler");
 const testData = require("../data.json");
 const dotenv = require("dotenv")
-const { distinguish: distinguish } = require("../utils/compare");
 const { webData } = require("../model/webData");
 const dynamicClass = require("../utils/model");
 async function getData() {
