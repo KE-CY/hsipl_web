@@ -3,9 +3,6 @@ const testData = require("../data.json");
 const dotenv = require("dotenv")
 const { webData } = require("../model/webData");
 const dynamicClass = require("../utils/model");
-async function getData() {
-    return await testData;
-}
 class onlyTextController {
     async get(req, res, next) {
         try {
@@ -29,6 +26,21 @@ class onlyTextController {
                 msg: 'success',
                 data: master
             });
+        } catch (error) {
+            res.status(404).json({
+                msg: error
+            });
+        }
+    }
+    async geyItem(req, res, next) {
+        try {
+            let masterData = await webData.findById({ _id: process.env.MONGODB_ID }).select("onlyTextData -_id");   
+            masterData = JSON.parse(masterData.onlyTextData);
+            const masterDataItem = Object.keys(masterData);
+            res.status(201).json({
+                msg: 'success',
+                data: masterDataItem
+            })
         } catch (error) {
             res.status(404).json({
                 msg: error
